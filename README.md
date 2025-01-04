@@ -5,9 +5,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 Please ensure that node is installed on you machine.
 You can download latest node version here: https://nodejs.org/en/download
 
-To run the application in your local environment run the following command:
+To run the application in your local environment run the following commands:
 
 ```bash
+npm i
 npm run dev
 ```
 
