@@ -2,35 +2,45 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Please ensure that node is installed on you machine.
+You can download latest node version here: https://nodejs.org/en/download
+
+To run the application in your local environment run the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. By default, you'll be redirected to the new lead form.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To access the leads list visit the http://localhost:3000/leads
+This will lead to a login page as this is protected by auth guard.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Use the following credentials to login
+username: admin@tryalma.ai
+password: tryalma
 
-## Learn More
+## Tech stack
 
-To learn more about Next.js, take a look at the following resources:
+- Nextjs
+- react-hook-form: For form validation
+- Styled components: for styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Form: A form component for inputting lead information (name, email, phone, address).
+- LeadList: A component to display a list of leads.
+- Login Page
 
-## Deploy on Vercel
+### Reusable components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+There are a lot of components in this repo, which are being reused. e.g: Text, Input field, Button, etc. These reusable components reside under lib/components
+The lib directory contains shared resources as well, such as logo and other styled components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Constants
+
+All the constants are stored in a /constant directory.
+
+### Icons
+
+All icons are stored in public/icons directory
